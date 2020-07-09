@@ -1,24 +1,64 @@
-# README
+# users table
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unique: true|
+|email|string|null: false|
+|password|string|null: false|
 
-Things you may want to cover:
+## Association
 
-* Ruby version
+- has_many :schedules, through: :users_schedules
+- has_many :users_schedules
+- belongs_to :ownpage
 
-* System dependencies
+# schedules table
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|content|string|----|
 
-* Database creation
+## Association
 
-* Database initialization
+- has_many :users, through: :users_schedules
+- has_many :users_schedules
+- has_many :ownpages, through: :schedules_ownpages
+- has_many :schedules_ownpages
 
-* How to run the test suite
+# ownpages table
 
-* Services (job queues, cache servers, search engines, etc.)
+|Column|Type|Options|
+|------|----|-------|
+|image|string|------|
+|content|text|------|
 
-* Deployment instructions
+## Association
 
-* ...
+- belongs_to :user
+- has_many :schedules, through: :schedules_ownpages
+- has_many :schedules_ownpages
+
+# user_schedules table
+
+|Column|Type|Options|
+|------|----|-------|
+|use_id|references|null: false, foreign_key: true|
+|schedule_id|references|null: false, foreign_key: true|
+
+## Association
+
+- belongs_to :user
+- belongs_to :schedule
+
+# schedules_ownpages table
+
+|Column|Type|Options|
+|------|----|-------|
+|ownpage_id|references|null: false, foreign_key: true|
+|schedule_id|references|null: false, foreign_key: true|
+
+## Association
+
+- belongs_to :ownpage
+- belongs_to :schedule
