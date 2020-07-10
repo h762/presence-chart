@@ -1,0 +1,21 @@
+.Top{
+  &__upper{
+    display: flex;
+    justify-content: flex-end;
+    &__loginBtn{
+      margin-right: 100px;
+      border: 1px solid black;
+      text-decoration: none;
+    }
+  }
+  &__middle{
+    display: flex;
+    border-bottom: 1px solid black;
+    &__date{
+      margin-left: 30px;
+    }
+    &__title{
+      margin: 0 auto;
+    }
+  }
+}
