@@ -10,12 +10,26 @@
   }
   &__middle{
     display: flex;
-    border-bottom: 1px solid black;
     &__date{
       margin-left: 30px;
     }
     &__title{
       margin: 0 50% 0 auto;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+  &__bottom{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    &__previousDayBtn{
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    &__nextDayBtn{
+      text-decoration: none;
+      margin-right: 20px;
     }
   }
 }
