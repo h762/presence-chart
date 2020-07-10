@@ -6,30 +6,38 @@
     background-color: lightgreen;
     display: block;
     &__title{
-      margin: 0 auto;
+      margin: 50px 0 50px 0;
       font-size: 30px;
+      text-align: center;
     }
     &__form{
       &__name{
         font-size: 20px;
         text-align: center;
+        margin-bottom: 20px;
       }
       &__email{
         font-size: 20px;
         text-align: center;
+        margin-bottom: 20px;
       }
       &__pass{
         font-size: 20px;
         text-align: center;
+        margin-bottom: 20px;
       }
       &__again{
         font-size: 20px;
         text-align: center;
+        margin-bottom: 20px;
       }
-    &__entry{
-      margin: 0 0 10px 50px;
-      &__btn{}
     }
+    &__entry{
+      margin: 0 0 10px 0;
+      text-align: center;
+      &__btn{
+        font-size: 35px;
+      }
     }
   }
 }
