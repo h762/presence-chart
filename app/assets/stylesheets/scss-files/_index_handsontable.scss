@@ -1,0 +1,14 @@
+.Bottom{
+  display: flex;
+  &__user{
+    &__nameBox{
+      flex-direction: column;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 90px;
+    }
+  }
+  &__schedule{
+    background-color: blue;
+  }
+}

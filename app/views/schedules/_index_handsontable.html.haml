@@ -1,8 +1,35 @@
+!!!
 %html
   %head
-    %link(rel="stylesheet" href="app/assets/stylesheets/handsontable.full.min.css")
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %link{rel: "stylesheet", href: "handsontable.full.min.css"}/
   %body
     .Bottom
       .Bottom__user
-      #grid
-  
+        .Bottom__user__nameBox
+          jake
+        .Bottom__user__nameBox
+          john
+        .Bottom__user__nameBox
+          joseph
+        .Bottom__user__nameBox
+          jack
+      .Bottom__schedule
+        #grid
+        %script{src: "../javascript/handsontable.full.min.js"}
+        %script{src: "../javascript/script.js"}
+
+
+
+-# !!!
+-# %html
+-#   %head
+-#     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+-#     %meta{:charset => "UTF-8"}/
+-#     %title Handsontable
+-#     %link{:href => "handsontable.full.min.css", :rel => "stylesheet"}/
+-#   %body
+-#     #grid
+-#     %script{:src => "../javascript/handsontable.full.min.js"}
+-#     %script{:src => "../javascript/script.js"}
