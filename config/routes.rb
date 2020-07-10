@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root "schedules#index"
+  root "schedules#new"
 end

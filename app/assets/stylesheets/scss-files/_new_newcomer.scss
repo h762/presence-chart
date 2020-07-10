@@ -1,0 +1,35 @@
+.BaseNew{
+  display: flex;
+  &__newEntry{
+    width: 50vw;
+    justify-content: center;
+    background-color: lightgreen;
+    display: block;
+    &__title{
+      margin: 0 auto;
+      font-size: 30px;
+    }
+    &__form{
+      &__name{
+        font-size: 20px;
+        text-align: center;
+      }
+      &__email{
+        font-size: 20px;
+        text-align: center;
+      }
+      &__pass{
+        font-size: 20px;
+        text-align: center;
+      }
+      &__again{
+        font-size: 20px;
+        text-align: center;
+      }
+    &__entry{
+      margin: 0 0 10px 50px;
+      &__btn{}
+    }
+    }
+  }
+}
