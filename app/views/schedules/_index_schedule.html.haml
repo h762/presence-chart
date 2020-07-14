@@ -1,19 +1,21 @@
 .Bottom
   .Bottom__user
-    .Bottom__user__nameBox
-      name
-    .Bottom__user__nameBox
-      john
-    .Bottom__user__nameBox
-      joseph
-    .Bottom__user__nameBox
-      jack
-    .Bottom__user__nameBox
-      john
-    .Bottom__user__nameBox
-      joseph
-    .Bottom__user__nameBox
-      jack
+    - users.each do |i|
+      .Bottom__user__nameBox
+        name
+      .Bottom__user__nameBox
+        = current_user.name
+      .Bottom__user__nameBox
+        -# = i.name
+        joseph
+      .Bottom__user__nameBox
+        jack
+      .Bottom__user__nameBox
+        john
+      .Bottom__user__nameBox
+        joseph
+      .Bottom__user__nameBox
+        jack
   .Bottom__schedule
     .Bottom__schedule__body
       = render "chart"

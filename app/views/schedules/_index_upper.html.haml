@@ -5,7 +5,8 @@
   .Top__middle
     .Top__middle__date
       -# = render "today"
-      = Time.now
+      -# = Time.now
+      %input#today{:type => "date"}/
     .Top__middle__title
       タイトル
   .Top__bottom
