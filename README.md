@@ -8,8 +8,8 @@
 
 ## Association
 
-- has_many :schedules, through: :users_schedules
-- has_many :users_schedules
+- has_many :schedules, through: :user_schedules
+- has_many :user_schedules
 - belongs_to :ownpage
 
 # schedules table
@@ -23,8 +23,8 @@
 
 - has_many :users, through: :users_schedules
 - has_many :users_schedules
-- has_many :ownpages, through: :schedules_ownpages
-- has_many :schedules_ownpages
+- has_many :ownpages, through: :schedule_ownpages
+- has_many :schedule_ownpages
 
 # ownpages table
 
@@ -37,7 +37,7 @@
 
 - belongs_to :user
 - has_many :schedules, through: :schedules_ownpages
-- has_many :schedules_ownpages
+- has_many :schedule_ownpages
 
 # user_schedules table
 
