@@ -1,11 +1,15 @@
 .Bottom{
   display: flex;
   &__user{
+    font-size: 20px;
+    width: 90px;
     &__nameBox{
       flex-direction: column;
-      font-size: 20px;
       border: 1px solid black;
-      width: 90px;
+      font-size: 20px;
+      &__name{
+        text-decoration: none;
+      }
     }
   }
   &__schedule{

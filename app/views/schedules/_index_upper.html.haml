@@ -1,10 +1,12 @@
 .Top
   .Top__upper
-    = link_to "#", class: "Top__upper__loginBtn" do
+    = link_to edit_user_path(current_user), class: "Top__upper__loginBtn" do
       ログイン
   .Top__middle
     .Top__middle__date
-      = render "today"
+      -# = render "today"
+      -# = Time.now
+      %input#today{:type => "date"}/
     .Top__middle__title
       タイトル
   .Top__bottom
