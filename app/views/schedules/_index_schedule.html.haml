@@ -1,21 +1,9 @@
 .Bottom
   .Bottom__user
-    - @users.each do |i|
+    name
+    - @user.each do |i|
       .Bottom__user__nameBox
-        name
-      .Bottom__user__nameBox
-        = current_user.name
-      .Bottom__user__nameBox
-        -# = i.name
-        joseph
-      .Bottom__user__nameBox
-        jack
-      .Bottom__user__nameBox
-        john
-      .Bottom__user__nameBox
-        joseph
-      .Bottom__user__nameBox
-        jack
+        = i.name
   .Bottom__schedule
     .Bottom__schedule__body
       = render "chart"
