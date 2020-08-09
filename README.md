@@ -17,9 +17,9 @@
 ・作成したユーザーは自動的にメインページのユーザー欄に追加される  <br>
 ・時間帯を表にして、セルをクリックするだけで簡単に在室（■）と不在（□）を切り替えられるようにした
 ## 使用技術
-Haml,    Scss,   JavaScript  <br>
-Ruby on Rails  <br>
-PostgleSQL
+言語： Haml,    Scss,   JavaScript  <br>
+フレームワーク： Ruby on Rails  <br>
+DB： PostgleSQL
 ## 今後実装したい機能
 ・個人ページを充実させる  <br>
 ・選択した日付毎に予定を作成できるようにして、日付やボタンで移動できるようにする
