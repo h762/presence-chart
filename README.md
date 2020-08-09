@@ -1,4 +1,5 @@
-# users table
+# DB設計
+## users table
 
 |Column|Type|Options|
 |------|----|-------|
@@ -6,59 +7,59 @@
 |email|string|null: false|
 |password|string|null: false|
 
-## Association
+### Association
 
 - has_many :schedules, through: :user_schedules
 - has_many :user_schedules
 - belongs_to :ownpage
 
-# schedules table
+## schedules table
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |content|string|----|
 
-## Association
+### Association
 
 - has_many :users, through: :users_schedules
 - has_many :users_schedules
 - has_many :ownpages, through: :schedule_ownpages
 - has_many :schedule_ownpages
 
-# ownpages table
+## ownpages table
 
 |Column|Type|Options|
 |------|----|-------|
 |image|string|------|
 |content|text|------|
 
-## Association
+### Association
 
 - belongs_to :user
 - has_many :schedules, through: :schedules_ownpages
 - has_many :schedule_ownpages
 
-# user_schedules table
+## user_schedules table
 
 |Column|Type|Options|
 |------|----|-------|
 |use_id|references|null: false, foreign_key: true|
 |schedule_id|references|null: false, foreign_key: true|
 
-## Association
+### Association
 
 - belongs_to :user
 - belongs_to :schedule
 
-# schedules_ownpages table
+## schedules_ownpages table
 
 |Column|Type|Options|
 |------|----|-------|
 |ownpage_id|references|null: false, foreign_key: true|
 |schedule_id|references|null: false, foreign_key: true|
 
-## Association
+### Association
 
 - belongs_to :ownpage
 - belongs_to :schedule
