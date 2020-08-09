@@ -9,7 +9,7 @@
 格闘ゲームやFPS等の対人ゲームの初心者用の練習場が少ないと感じていたため、今後オンライン上で初心者用の練習場を作成しようと考えている。今回はそのときに使用する、誰がどの時間帯であれば参加しているかが一目で分かるアプリを作成した。
 ## デモ
 ### メインページ
-<img width="1440" alt="presence-chart__main" src="https://user-images.githubusercontent.com/67146016/89723593-8ce18a80-da33-11ea-9364-6fbcc0f0ce53.png">
+<img width="1440" alt="presence-chart__main" src="https://user-images.githubusercontent.com/67146016/89723593-8ce18a80-da33-11ea-9364-6fbcc0f0ce53.png">  <br>
 ### 個人ページ
 <img width="1440" alt="presence-chart__ownpage" src="https://user-images.githubusercontent.com/67146016/89723597-9834b600-da33-11ea-87f2-d5118b2b0066.png">
 
