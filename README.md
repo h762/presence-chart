@@ -11,6 +11,8 @@
 ### メインページ
 <img width="1440" alt="presence-chart__main" src="https://user-images.githubusercontent.com/67146016/89723593-8ce18a80-da33-11ea-9364-6fbcc0f0ce53.png">
 ### 個人ページ
+<img width="1440" alt="presence-chart__ownpage" src="https://user-images.githubusercontent.com/67146016/89723597-9834b600-da33-11ea-87f2-d5118b2b0066.png">
+
 ## 工夫点
 ・作成したユーザーは自動的にメインページのユーザー欄に追加される  <br>
 ・時間帯を表にして、セルをクリックするだけで簡単に在室（■）と不在（□）を切り替えられるようにした
