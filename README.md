@@ -17,8 +17,7 @@
 ・作成したユーザーは自動的にメインページのユーザー欄に追加される  <br>
 ・時間帯を表にして、セルをクリックするだけで簡単に在室（■）と不在（□）を切り替えられるようにした
 ## 使用技術
-### 使用ツール
-Haml,  Scss, JavaScript  <br>
+Haml,    Scss,   JavaScript  <br>
 Ruby on Rails  <br>
 PostgleSQL
 ## 今後実装したい機能
